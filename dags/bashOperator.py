@@ -7,9 +7,9 @@ from airflow.utils.dates import timedelta
 
 
 with DAG(
-    'dbt_dag',
+    'bash_DAG',
     start_date=datetime(2021, 12, 23),
-    description='An Airflow DAG to invoke simple dbt commands',
+    description='An Airflow DAG to invoke simple bash commands',
     schedule_interval=timedelta(days=1),
 ) as dag:
     test = BashOperator(

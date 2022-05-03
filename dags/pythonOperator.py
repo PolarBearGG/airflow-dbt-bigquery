@@ -34,9 +34,9 @@ default_args = {
 
 # define the DAG
 dag = DAG(
-    'python_operator_sample',
+    'python_DAG',
     default_args=default_args,
-    description='How to use the Python Operator?',
+    description='An Airflow DAG to invoke simple python commands',
     schedule_interval=timedelta(days=1),
 )
 
