@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: mascots_team_colors
+    description: "mascots with colors"
+    columns:
+      - name: color
+        description: "color column"
+        tests:
+          - not_null
+
